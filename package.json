@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-stellar",
-  "description": "Gatsby Starter - Stellar by HTML5 UP",
+  "name": "bengallowayio",
+  "description": "Ben's personal site",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Ben Galloway (package@bengalloway.io)",
   "dependencies": {
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-netlify": "^2.0.16",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
@@ -17,21 +18,16 @@
     "react-scrollspy": "^3.3.5",
     "react-waypoint": "^8.0.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gatsby develop"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/bengal75/bengalloway.io"
   }
 }

@@ -1,24 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Stellar by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Stellar by HTML5 UP"
+    title: "Dr. Ben Galloway",
+    author: "Ben Galloway",
+    description:
+      "Ben is a full-stack JavaScript software developer, science communicator, and technical writer and consultant.",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        name: "Dr. Ben Galloway",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "#935d8c",
+        theme_color: "#935d8c",
+        display: "minimal-ui",
+        icon: "src/assets/images/icons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    "gatsby-plugin-sass",
+    "gatsby-plugin-offline",
   ],
-}
+};

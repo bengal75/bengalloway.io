@@ -1,146 +1,165 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import Waypoint from 'react-waypoint'
+import React from "react";
+import { Link } from "gatsby";
+import Helmet from "react-helmet";
+import Waypoint from "react-waypoint";
 
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import Nav from '../components/Nav'
-import pic01 from '../assets/images/pic01.jpg'
+import Layout from "../components/layout";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Scroll from "../components/Scroll";
+import headshot from "../assets/images/headshot.jpg";
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      stickyNav: false
-    }
+      stickyNav: false,
+    };
   }
 
-  _handleWaypointEnter= () => {
+  _handleWaypointEnter = () => {
     this.setState(() => ({ stickyNav: false }));
-  }
+  };
 
   _handleWaypointLeave = () => {
     this.setState(() => ({ stickyNav: true }));
-  }
+  };
 
   render() {
-
     return (
       <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Dr. Ben Galloway" />
 
         <Header />
 
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
-        >
-        </Waypoint>
+        />
         <Nav sticky={this.state.stickyNav} />
 
         <div id="main">
-
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>About Ben</h2>
+                  <p>
+                    As you may have noticed, this website is still under heavy
+                    construction.
+                  </p>
                 </header>
-                <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                <p>Over the next few weeks it should be rapidly populated.</p>
                 <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
+                  <li>
+                    <Link to="/" className="button">
+                      There might be a button here. Who knows?
+                    </Link>
+                  </li>
                 </ul>
               </div>
-              <span className="image"><img src={pic01} alt="" /></span>
+              <span className="image">
+                <img src={headshot} alt="Ben's face, smiling, in monochrome" />
+              </span>
             </div>
           </section>
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Software and Science</h2>
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style1 fa-code" />
+                <h3>Software</h3>
+                <p>Here is some descriptional text.</p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style3 fa-copy" />
+                <h3>Science</h3>
+                <p>Here is some descriptional text.</p>
               </li>
               <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style5 fa-diamond" />
+                <h3>Communication</h3>
+                <p>Here is some descriptional text.</p>
               </li>
             </ul>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li>
+                  <Link to="/" className="button">
+                    Learn More
+                  </Link>
+                </li>
               </ul>
             </footer>
           </section>
 
           <section id="second" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Theatre and Communication</h2>
             </header>
             <ul className="statistics">
               <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
+                <span className="icon fa-code-fork" />
+                <strong>5,120</strong> Fork
               </li>
               <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
+                <span className="icon fa-folder-open-o" />
+                <strong>8,192</strong> Folder
               </li>
               <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
+                <span className="icon fa-signal" />
+                <strong>2,048</strong> Signal
               </li>
               <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
+                <span className="icon fa-laptop" />
+                <strong>4,096</strong> Laptop
               </li>
               <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
+                <span className="icon fa-diamond" />
+                <strong>1,024</strong> Diamond
               </li>
             </ul>
-            <p className="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+            <p>
+              All of the numbers in the above are meaningless. Well, at the
+              moment at least!
+            </p>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li>
+                  <Link to="/" className="button">
+                    Learn More
+                  </Link>
+                </li>
               </ul>
             </footer>
           </section>
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Get In Touch</h2>
+              <p>
+                Got a project you'd like to talk about? Always happy to chat.
+              </p>
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
-                <li><Link to="/generic" className="button">Learn More</Link></li>
+                <li>
+                  <Scroll type="id" element="footer">
+                    <a href="/" className="button special">
+                      Contact Ben
+                    </a>
+                  </Scroll>
+                </li>
               </ul>
             </footer>
           </section>
-
         </div>
-
       </Layout>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
