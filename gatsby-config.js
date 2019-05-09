@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Dr. Ben Galloway",
-        short_name: "starter",
+        short_name: "BG",
         start_url: "/",
         background_color: "#935d8c",
         theme_color: "#935d8c",
@@ -20,6 +20,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-sass",
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
   ],
 };
