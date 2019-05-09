@@ -14,7 +14,7 @@ module.exports = {
         short_name: "BG",
         start_url: "/",
         background_color: "#4d6f93",
-        theme_color: "#6789ad",
+        theme_color: "#4d6f93",
         display: "minimal-ui",
         icon: "src/assets/images/icons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
