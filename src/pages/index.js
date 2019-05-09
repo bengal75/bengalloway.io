@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Scroll from "../components/Scroll";
-import headshot from "../assets/images/headshot.jpg";
+import headshot from "../assets/images/headshot-400x400.jpg";
 
 class Index extends React.Component {
   constructor(props) {

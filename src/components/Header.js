@@ -1,6 +1,6 @@
 import React from "react";
 
-import headshot from "../assets/images/headshot.jpg";
+import headshot from "../assets/images/headshot-400x400.jpg";
 
 const headshotStyle = {
   maxWidth: "200px",
