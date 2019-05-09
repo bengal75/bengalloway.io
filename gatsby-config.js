@@ -13,8 +13,8 @@ module.exports = {
         name: "Dr. Ben Galloway",
         short_name: "BG",
         start_url: "/",
-        background_color: "#935d8c",
-        theme_color: "#935d8c",
+        background_color: "#4d6f93",
+        theme_color: "#6789ad",
         display: "minimal-ui",
         icon: "src/assets/images/icons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
