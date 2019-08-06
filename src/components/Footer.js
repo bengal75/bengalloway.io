@@ -15,8 +15,23 @@ const Footer = props => (
       <h2>Around the Web</h2>
       <ul className="icons">
         <li>
-          <a href="https://github.com/bengal75" className="icon fa-github alt">
+          <a
+            href="https://github.com/bengal75"
+            className="icon fa-github alt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="label">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/benagalloway/"
+            className="icon fa-linkedin-square alt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="label">LinkedIn</span>
           </a>
         </li>
       </ul>

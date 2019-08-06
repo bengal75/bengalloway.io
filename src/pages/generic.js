@@ -1,60 +1,160 @@
 import React from "react";
+import { Link } from "gatsby";
 import Helmet from "react-helmet";
+import Waypoint from "react-waypoint";
 
 import Layout from "../components/layout";
 import HeaderGeneric from "../components/HeaderGeneric";
-import headshot from "../assets/images/headshot.jpg";
+import Nav from "../components/Nav";
+import Scroll from "../components/Scroll";
+import headshot from "../assets/images/headshot-400x400.jpg";
 
-class Generic extends React.Component {
+class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      stickyNav: false,
+    };
+  }
+
+  _handleWaypointEnter = () => {
+    this.setState(() => ({ stickyNav: false }));
+  };
+
+  _handleWaypointLeave = () => {
+    this.setState(() => ({ stickyNav: true }));
+  };
+
   render() {
     return (
       <Layout>
-        <Helmet title="Generic Page Title" />
+        <Helmet title="Research | Dr. Ben Galloway" />
+
         <HeaderGeneric />
+
+        <Waypoint
+          onEnter={this._handleWaypointEnter}
+          onLeave={this._handleWaypointLeave}
+        />
+        <Nav sticky={this.state.stickyNav} />
+
         <div id="main">
-          <section id="content" className="main">
-            <span className="image main">
-              <img src={headshot} alt="" />
-            </span>
-            <h2>Magna feugiat lorem</h2>
+          <section id="intro" className="main">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>About Ben</h2>
+                  <p>
+                    As you may have noticed, this website is still under heavy
+                    construction.
+                  </p>
+                </header>
+                <p>Over the next few weeks it should be rapidly populated.</p>
+                <ul className="actions">
+                  <li>
+                    <Link to="/" className="button">
+                      There might be a button here. Who knows?
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <span className="image">
+                <img src={headshot} alt="Ben's face, smiling, in monochrome" />
+              </span>
+            </div>
+          </section>
+
+          <section id="first" className="main special">
+            <header className="major">
+              <h2>Software and Science</h2>
+            </header>
+            <ul className="features">
+              <li>
+                <span className="icon major style1 fa-code" />
+                <h3>Software</h3>
+                <p>Here is some descriptional text.</p>
+              </li>
+              <li>
+                <span className="icon major style3 fa-copy" />
+                <h3>Science</h3>
+                <p>Here is some descriptional text.</p>
+              </li>
+              <li>
+                <span className="icon major style5 fa-diamond" />
+                <h3>Communication</h3>
+                <p>Here is some descriptional text.</p>
+              </li>
+            </ul>
+            <footer className="major">
+              <ul className="actions">
+                <li>
+                  <Link to="/" className="button">
+                    Learn More
+                  </Link>
+                </li>
+              </ul>
+            </footer>
+          </section>
+
+          <section id="second" className="main special">
+            <header className="major">
+              <h2>Theatre and Communication</h2>
+            </header>
+            <ul className="statistics">
+              <li className="style1">
+                <span className="icon fa-code-fork" />
+                <strong>5,120</strong> Fork
+              </li>
+              <li className="style2">
+                <span className="icon fa-folder-open-o" />
+                <strong>8,192</strong> Folder
+              </li>
+              <li className="style3">
+                <span className="icon fa-signal" />
+                <strong>2,048</strong> Signal
+              </li>
+              <li className="style4">
+                <span className="icon fa-laptop" />
+                <strong>4,096</strong> Laptop
+              </li>
+              <li className="style5">
+                <span className="icon fa-diamond" />
+                <strong>1,024</strong> Diamond
+              </li>
+            </ul>
             <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis. Praesent rutrum sem diam, vitae egestas enim
-              auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit
-              amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a
-              elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-              Curabitur sapien risus, commodo eget turpis at, elementum
-              convallis fames ac ante ipsum primis in faucibus.
+              All of the numbers in the above are meaningless. Well, at the
+              moment at least!
             </p>
-            <p>
-              Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-              Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-              Consequat leo mauris, consectetur id ipsum sit amet, fersapien
-              risus, commodo eget turpis at, elementum convallis elit enim
-              turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis
-              elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu
-              ultricies erat malesuada quis. Aliquam dapibus, lacus eget
-              hendrerit bibendum, urna est aliquam sem, sit amet est velit quis
-              lorem.
-            </p>
-            <h2>Tempus veroeros</h2>
-            <p>
-              Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus
-              nunc placerat. Tempus adipiscing turpis non blandit accumsan eget
-              lacinia nunc integer interdum amet aliquam ut orci non col ut ut
-              praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac
-              commodo faucibus faucibus. Curae ante vestibulum ante. Blandit.
-              Ante accumsan nisi eu placerat gravida placerat adipiscing in
-              risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit
-              aliquet aliquet lobortis. Ultricies blandit lobortis praesent
-              turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep.
-              Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio
-              vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis
-              in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan
-              mi eget adipiscing nulla. Non vestibulum ac interdum condimentum
-              semper commodo massa arcu.
-            </p>
+            <footer className="major">
+              <ul className="actions">
+                <li>
+                  <Link to="/" className="button">
+                    Learn More
+                  </Link>
+                </li>
+              </ul>
+            </footer>
+          </section>
+
+          <section id="cta" className="main special">
+            <header className="major">
+              <h2>Get In Touch</h2>
+              <p>
+                Got a project you'd like to talk about? Always happy to chat.
+              </p>
+            </header>
+            <footer className="major">
+              <ul className="actions">
+                <li>
+                  <Scroll type="id" element="footer">
+                    <a href="/" className="button special">
+                      Contact Ben
+                    </a>
+                  </Scroll>
+                </li>
+              </ul>
+            </footer>
           </section>
         </div>
       </Layout>
@@ -62,4 +162,4 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic;
+export default Index;

@@ -1,41 +1,41 @@
-import React from 'react'
-import '../assets/scss/main.scss'
-
-import Footer from './Footer'
+import React from "react";
+import "../assets/scss/main.scss";
+import GlobalNav from "./GlobalNav";
+import Footer from "./Footer";
 
 class Template extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: 'is-loading'
-    }
+      loading: "is-loading",
+    };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
+      this.setState({ loading: "" });
     }, 100);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId);
     }
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div className={`body ${this.state.loading}`}>
         <div id="wrapper">
-
+          {!this.props.noGlobalNav && <GlobalNav />}
           {children}
           <Footer />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Template
+export default Template;
