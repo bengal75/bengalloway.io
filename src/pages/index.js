@@ -44,10 +44,11 @@ class Index extends React.Component {
                   <h2>About Me</h2>
                   <p>
                     I am a full-stack JavaScript developer with a PhD in
-                    computational particle physics. I have experience working
-                    on, setting up and administrating Linux systems; technical
-                    consultancy and content creation; teaching and science
-                    communication; and theatre production and performance.
+                    computational particle physics and a love of web
+                    technologies. I have experience in setting up, using,
+                    teaching and administrating Linux systems; technical
+                    consultancy and content creation; science communication and
+                    education; and theatre production and performance.
                   </p>
                 </header>
                 <p>

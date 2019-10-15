@@ -19,7 +19,7 @@ const Header = props => (
     <h1>Dr. Ben Galloway</h1>
     <p>
       Full-stack JavaScript software developer, science communicator, and
-      technical writer and consultant.
+      technical writer and consultant
     </p>
   </header>
 );
