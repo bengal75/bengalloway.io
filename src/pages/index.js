@@ -76,9 +76,15 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style3 fa-ticket" />
+                <span className="icon major style1 fa-ticket" />
                 <h3>
-                  <a href="https://today.gsc.org.uk">GSC Today</a>
+                  <a
+                    href="https://today.gsc.org.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GSC Today
+                  </a>
                 </h3>
                 <p>
                   An internal events and statistics dashboard for{" "}
@@ -98,9 +104,13 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style5 fa-sign-language" />
+                <span className="icon major style4 fa-sign-language" />
                 <h3>
-                  <a href="https://itunes.apple.com/gb/app/glasgow-science-centre-bsl-app/id1199443188">
+                  <a
+                    href="https://itunes.apple.com/gb/app/glasgow-science-centre-bsl-app/id1199443188"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     BSL Accessibility App
                   </a>
                 </h3>
@@ -122,7 +132,7 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style4 fa-file-archive-o" />
+                <span className="icon major style2 fa-file-archive-o" />
                 <h3>
                   <a
                     href="https://upload.cecilianarchives.com"
@@ -147,12 +157,94 @@ class Index extends React.Component {
                   https://github.com/cecilian-archives
                 </a>
               </li>
+              <li>
+                <span className="icon major style5 fa-user-md" />
+                <h3>
+                  <a
+                    href="https://iob.bengalloway.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Insulin on Board
+                  </a>
+                </h3>
+                <p>
+                  A{" "}
+                  <a
+                    href="https://developers.google.com/web/progressive-web-apps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Progressive Web App
+                  </a>{" "}
+                  to keep track of insulin doses for people (like me!) with
+                  diabetes.
+                </p>
+                <p>
+                  Uses{" "}
+                  <a
+                    href="https://material-ui.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Material-UI
+                  </a>{" "}
+                  for styling and keeps data in localStorage. Next experiment is
+                  data synchronisation between devices.
+                </p>
+              </li>
+              <li>
+                <span className="icon major style3 fa-calendar-o" />
+                <h3>
+                  <a
+                    href="https://whatsonatthehydrotonight.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    What's On at the Hydro Tonight?
+                  </a>
+                </h3>
+                <p>
+                  A single-purpose web page in the style of{" "}
+                  <a
+                    href="https://isitchristmas.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    IsItChristmas.com
+                  </a>{" "}
+                  to report what's playing today at the{" "}
+                  <a
+                    href="https://www.thessehydro.com/whats-on"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SSE Hydro
+                  </a>{" "}
+                  arena in Glasgow, Scotland.
+                </p>
+                <p>
+                  Hosted on{" "}
+                  <a
+                    href="https://www.netlify.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Netlify
+                  </a>
+                  , making use of Netlify Functions to call the{" "}
+                  <a
+                    href="https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ticketmaster API
+                  </a>{" "}
+                  without exposing API keys.
+                </p>
+              </li>
             </ul>
             <footer className="major">
-              <p>
-                This site is still under extended construction, and this section
-                is due a revamp!
-              </p>
               <ul className="actions">
                 <li>
                   <a href="https://github.com/bengal75" className="button">
