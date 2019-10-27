@@ -1,10 +1,11 @@
 {
   "name": "bengallowayio",
   "description": "Ben's personal site",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Ben Galloway (package@bengalloway.io)",
   "dependencies": {
     "gatsby": "^2.2.9",
+    "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-netlify": "^2.0.16",
     "gatsby-plugin-offline": "^2.0.25",
