@@ -18,8 +18,8 @@ const Header = props => (
     </span>
     <h1>Dr. Ben Galloway</h1>
     <p>
-      Full-stack JavaScript software developer, science communicator, and
-      technical writer and consultant
+      Full-stack web developer, science communicator, technical educator, and
+      consultant
     </p>
   </header>
 );

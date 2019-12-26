@@ -158,7 +158,7 @@ class Index extends React.Component {
                   >
                     Cecilian Society
                   </a>
-                  .
+                  . Work in progress!
                 </p>
                 <a href="https://github.com/cecilian-archives">
                   https://github.com/cecilian-archives
