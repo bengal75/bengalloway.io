@@ -374,6 +374,12 @@ class Index extends React.Component {
                 </p>
                 <ul>
                   <li>
+                    <a href="https://arxiv.org/abs/2005.01845">
+                      Charmonium properties from lattice QCD + QED
+                    </a>
+                    , May 2020
+                  </li>
+                  <li>
                     <a href="https://arxiv.org/abs/1411.1318">
                       Radial and orbital excitation energies of charmonium
                     </a>
@@ -381,8 +387,8 @@ class Index extends React.Component {
                   </li>
                   <li>
                     <a href="https://arxiv.org/abs/1408.4169">
-                      High-precision quark masses and QCD coupling from n_f=4
-                      lattice QCD
+                      High-precision quark masses and QCD coupling from n
+                      <sub>f</sub> = 4 lattice QCD
                     </a>
                     , August 2014
                   </li>
