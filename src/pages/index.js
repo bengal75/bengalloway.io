@@ -83,7 +83,72 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-ticket" />
+                <span
+                  className="icon major fa-wrench"
+                  style={{ color: "black" }}
+                />
+                <h3>
+                  <a
+                    href="https://www.neu.studio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Neu
+                  </a>
+                </h3>
+                <p>
+                  I'm currently Lead Developer at{" "}
+                  <a
+                    href="https://www.neu.studio/alcohol"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Neu
+                  </a>
+                  , guiding a team who build clean, performant and user-focused
+                  digital products in collaboration with an extensive list of{" "}
+                  <a
+                    href="https://www.neu.studio/partners"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    partners
+                  </a>
+                  .
+                </p>
+                <p>
+                  I don't tend to add the projects we work on to this site
+                  individually, but one of particular note is the{" "}
+                  <a
+                    href="https://ballot.glengoyne.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ballot for Glengoyne's 50-year-old single malt
+                  </a>{" "}
+                  which gained{" "}
+                  <a
+                    href="https://www.prweek.com/article/1703897/we-16000-people-sign-around-world-behind-campaign-glengoyne-whisky-ballot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    international recognition
+                  </a>
+                  .
+                </p>
+              </li>
+              <li
+                className="flex-wrap-breaker"
+                style={{
+                  flexBasis: "100%",
+                  height: 0,
+                }}
+              />
+              <li>
+                <span
+                  className="icon major fa-ticket"
+                  style={{ color: "#30b7bb" }}
+                />
                 <h3>
                   <a
                     href="https://today.gsc.org.uk"
@@ -111,35 +176,10 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style4 fa-sign-language" />
-                <h3>
-                  <a
-                    href="https://itunes.apple.com/gb/app/glasgow-science-centre-bsl-app/id1199443188"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    BSL Accessibility App
-                  </a>
-                </h3>
-                <p>
-                  A mobile app to deliver exhibit interpretation in British Sign
-                  Language for visitors to{" "}
-                  <a
-                    href="https://www.glasgowsciencecentre.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Glasgow Science Centre
-                  </a>
-                  .
-                </p>
-                <p>
-                  Implemented in React Native with videos using HLS for adaptive
-                  streaming.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style2 fa-file-archive-o" />
+                <span
+                  className="icon major fa-file-archive-o"
+                  style={{ color: "#2872af" }}
+                />
                 <h3>
                   <a
                     href="https://upload.cecilianarchives.com"
@@ -160,10 +200,21 @@ class Index extends React.Component {
                   </a>
                   . Work in progress!
                 </p>
-                <a href="https://github.com/cecilian-archives">
+                <a
+                  href="https://github.com/cecilian-archives"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   https://github.com/cecilian-archives
                 </a>
               </li>
+              <li
+                className="flex-wrap-breaker"
+                style={{
+                  flexBasis: "100%",
+                  height: 0,
+                }}
+              />
               <li>
                 <span className="icon major style5 fa-user-md" />
                 <h3>
@@ -285,7 +336,7 @@ class Index extends React.Component {
                   </p>
                 </header>
                 <p>My roles have included:</p>
-                <ul>
+                <ul style={{ textAlign: "left" }}>
                   <li>
                     Developing and delivering{" "}
                     <a href="https://blockchain.bengalloway.io">
@@ -372,7 +423,7 @@ class Index extends React.Component {
                   ", is available online, and I am a co-author on the following
                   high-energy physics papers:
                 </p>
-                <ul>
+                <ul style={{ textAlign: "left" }}>
                   <li>
                     <a href="https://arxiv.org/abs/2005.01845">
                       Charmonium properties from lattice QCD + QED
